@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Minotaurs";
+const description = "Fog Of War Heros";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -27,12 +27,16 @@ const layerConfigurations = [
     growEditionSizeTo: 5,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Horns" },
+      { name: "Fur" },
+      { name: "Base" },
+      { name: "Mouth" },
+      { name: "Tattoos" },
+      { name: "Eyes" },,
+      { name: "Clothes" },,
+      { name: "Armor" },,
+      { name: "Belt" },,
+      { name: "Helmet" },
     ],
   },
 ];
@@ -42,8 +46,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 750,
+  height: 750,
   smoothing: false,
 };
 
@@ -72,7 +76,7 @@ const pixelFormat = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",
